@@ -1,9 +1,9 @@
-public class ZadanieDomowe2 {
+public class ZadanieDomowe1 {
 
-    // 1. 4 zmienne typu int
-    // 2. Sprawdzamy czy suma dwóch pierwszych jest parzysta
-    // 3. Sprawdzamy czy suma dwóch pozostałych jest parzysta
-    // 4. Jeżeli dwie sumy są parzyste to wyświetl informację, że wszystkie liczby są parzyste
+    // 1. 4 zmienne typu int.
+    // 2. Sprawdzamy czy suma dwóch pierwszych jest parzysta.
+    // 3. Sprawdzamy czy suma dwóch pozostałych jest parzysta.
+    // 4. Jeżeli dwie sumy są parzyste to wyświetl informację, że wszystkie liczby są parzyste.
 
     public static void main(String[] args) {
         int number1 = 342423;
