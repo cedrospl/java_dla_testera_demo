@@ -1,4 +1,4 @@
-public class MainApp {
+public class MainAppTypyDanych {
 
     public static void main(String[] args) {
 
