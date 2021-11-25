@@ -19,11 +19,11 @@ public class Bug {
     String bugOpened = "otwarty";
     String bugClosed = "zamknięty";
 
-    Bug(String bugDescription, String bugReportersemail, int bugPriority, String bugStatus) {
+    Bug(String bugDescription, String bugReportersemail, int bugPriority) {
         this.bugDescription = bugDescription;
         this.bugReportersemail = bugReportersemail;
         this.bugPriority = isBugSevereOrNot();
-        this.bugStatus = isBugOpenedOrNot();
+        this.bugStatus = bugOpened;
     }
 
     void getAllData() {
@@ -42,18 +42,11 @@ public class Bug {
         return bugPriority;
     }
 
-    String isBugOpenedOrNot() {
-        if (bugStatus == null) {
-            return bugOpened;
-        } else {
-            return bugClosed;
-        }
-    }
-
     int isBugSevereOrNot() {
         if (bugPriority >= 1 && bugPriority <= 5) {
             return bugPriority;
-        } if (bugPriority < 1) {
+        }
+        if (bugPriority < 1) {
             return 1;
         } else {
             return 5;
