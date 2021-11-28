@@ -1,13 +1,15 @@
+package model;
+
 public class User {
 
     // 1. POLA OBIEKTU
     // OPISUJĄ Z CZEGO BĘDZIE SKŁADAŁ SIĘ DANY OBIEKT
 
-    String firstName; // default = null
-    String lastName; // default = null
-    String email; // default = null
-    int age; // default = 0
-    boolean isAdult; // default = false
+    private String firstName; // default = null
+    private String lastName; // default = null
+    private String email; // default = null
+    private int age; // default = 0
+    private boolean isAdult; // default = false
 
 
     // 3. KONSTRUKTOR
@@ -17,7 +19,7 @@ public class User {
     // KONSTRUKTOR PISZEMY WIELKĄ LITERĄ
     // KONSTRUKTOR NIE MA ZWRACANEGO TYPU
 
-    User(String firstName, String lastName, String email, int age) {
+    public User(String firstName, String lastName, String email, int age) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -30,20 +32,20 @@ public class User {
 
     // Tworzenie metody -> zwracany typ + nazwa metody
 
-    void getFullName() {
+    public void getFullName() {
         // ciało metody
         System.out.println(firstName + " " + lastName);
     }
 
-    void getAllInfo() {
+    public void getAllInfo() {
         System.out.println(firstName + " " + lastName + " " + email + " " + age + " " + isAdult);
     }
 
-    int getUserAge() {
+    public int getUserAge() {
         return age;
     }
 
-    boolean isUserAdult() {
+    public boolean isUserAdult() {
         if (age >= 18) {
             return true;
         } else {
@@ -51,19 +53,19 @@ public class User {
         }
     }
 
-    void greetings(String name) {
+    public void greetings(String name) {
         System.out.println("Hi " + name + ". Nice to see you!");
     }
 
-    void greetings(String firstName, String lastName) {
+    public void greetings(String firstName, String lastName) {
         System.out.println("Hi " + firstName + " " + lastName + ". Nice to see you!");
     }
 
-    void howOldAreYou(String name, int userAge) {
+    public void howOldAreYou(String name, int userAge) {
         System.out.println("Hi " + name + " you are " + userAge + " years old");
     }
 
-    int yourAgePlus10(int userAge) {
+    public int yourAgePlus10(int userAge) {
         return userAge + 10;
     }
 }

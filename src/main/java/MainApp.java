@@ -10,12 +10,15 @@ public class MainApp {
         firstBug.getBugStatus();
         System.out.println(firstBug.getBugPriority());
 
+        firstBug.setBugDescription("hello");
+        firstBug.getAllData();
+
         System.out.println(firstBug.getBugReportersemail());
         firstBug.setBugReportersemail("aaaaa@bbbbb.cccc");
         System.out.println(firstBug.getBugReportersemail());
 
         System.out.println(firstBug.getBugPriority());
-        firstBug.setBugPriority(89);
+        firstBug.setBugPriority(-2);
         System.out.println(firstBug.getBugPriority());
     }
 

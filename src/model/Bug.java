@@ -60,6 +60,22 @@ public class Bug {
         }
     }
 
+//    public void setBugPriority(int bugPriority) {
+//        switch (bugPriority) {
+//            case 1:
+//            case 2:
+//            case 3:
+//            case 4:
+//            case 5:
+//                this.bugPriority = bugPriority;
+//                break;
+//            default: {
+//                System.out.println("Incorrect bug priority range");
+//            }
+//        }
+//    }
+
+
     public String getBugStatus() {
         return bugStatus;
     }
